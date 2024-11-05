@@ -3,7 +3,7 @@ from dash import Dash, dcc, html, Input, Output, callback
 import dash_bio as dashbio
 
 app = Dash(__name__)
-
+server = app.server
 df = pd.read_csv('https://git.io/volcano_data1.csv')
 
 app.layout = html.Div([
